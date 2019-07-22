@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style2.css">
+
+    <style>
+        /* .color
+        {
+            background-color: yellow;
+        }
+        .border
+        {
+            border: 2px solid black;
+        } */
+    </style>
+</head>
+
+<body>
+    <!-- <div class="container">
+
+        <div class="row mt-5">
+            <div class="col">
+                <div class="upload-area">
+                    <h1 class="lead">Drag files here to add them to your repository</h1>
+                    <div class="upload"><i class="fas fa-cloud-upload-alt"></i></div>
+                    <input type="file" id="fileUpload" multiple class="form-control">
+                    <p class="lead text-center">Upload your files...</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="table-wrapper">
+                    <div class="upload-details my-3">
+                        <button class="btn btn-outline-dark more-files px-5 mr-3">
+                            <i class="far fa-plus-square"></i>
+                            Add more files
+                        </button>
+                        <button class="btn btn-outline-danger clear-all px-5 ">
+                            <i class="fas fa-trash-alt"></i>
+                            Clear all
+                        </button>
+                    </div>
+                    <table class="table table-bordered table-hovered upload-table">
+                        <thead>
+                            <tr>
+                                <th>№</th>
+                                <th>Image</th>
+                                <th>Name</th>
+                                <th>Size (kb)</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div> -->
+
+
+    <!-- <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="upload-div" style="cursor:pointer">Upload your files</div>
+                <input type="file" multiple class="input mt-5" style="display:block">
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col">
+                <div class="drop-zone border" style="width:300px;height:300px;"></div>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col">
+                <ul class="s-type list-unstyled d-flex">
+                    <li data-id="all" class="all active">All</li>
+                    <li data-id="cities">Cities</li>
+                    <li data-id="nature">Nature</li>
+                    <li data-id="industrial">Industrial</li>
+                    <li data-id="daylight">Daylight</li>
+                    <li data-id="nightscape">Nightscape</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <ul class="s-details list-unstyled d-flex">
+                    <li class="mr-3">Shuffle</li>
+                    <li class="asc">Asc</li>
+                    <li class="desc">Desc</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row img-holder">
+            <div class="col-12 d-flex flex-wrap">
+                <div class="col-3 px-0" data-id="cities" data-type="daylight">
+                    <div class="s-inner position-relative pr-3">
+                        <img src="img/img13.jpg">
+                        <div class="s-number position-absolute text-center text-white">1</div>
+                    </div>
+                </div>
+                <div class="col-3 px-0" data-id="cities" data-type="daylight">
+                    <div class="s-inner position-relative pr-3">
+                        <img src="img/img2.jpg">
+                        <div class="s-number position-absolute text-center text-white">2</div>
+                    </div>
+                </div>
+                <div class="col-3 px-0" data-id="nightscape" data-type="industrial">
+                    <div class="s-inner position-relative pr-3">
+                        <img src="img/img3.jpg">
+                        <div class="s-number position-absolute text-center text-white">3</div>
+                    </div>
+                </div>
+                <div class="col-3 px-0" data-id="industrial">
+                    <div class="s-inner position-relative pr-3">
+                        <img src="img/img4.jpg">
+                        <div class="s-number position-absolute text-center text-white">4</div>
+                    </div>
+                </div>
+                <div class="col-3 px-0" data-id="industrial">
+                    <div class="s-inner position-relative pr-3">
+                        <img src="img/img5.jpg">
+                        <div class="s-number position-absolute text-center text-white">5</div>
+                    </div>
+                </div>
+                <div class="col-3 px-0" data-id="industrial" data-type="nature">
+                    <div class="s-inner position-relative pr-3">
+                        <img src="img/img6.jpg">
+                        <div class="s-number position-absolute text-center text-white">6</div>
+                    </div>
+                </div>
+                <div class="col-3 px-0" data-id="nature">
+                    <div class="s-inner position-relative pr-3">
+                        <img src="img/img7.jpg">
+                        <div class="s-number position-absolute text-center text-white">7</div>
+                    </div>
+                </div>
+                <div class="col-3 px-0" data-id="nature">
+                    <div class="s-inner position-relative pr-3">
+                        <img src="img/img8.png">
+                        <div class="s-number position-absolute text-center text-white">8</div>
+                    </div>
+                </div>
+                <div class="col-3 px-0" data-id="nature" data-type="industrial">
+                    <div class="s-inner position-relative pr-3">
+                        <img src="img/img9.jpg">
+                        <div class="s-number position-absolute text-center text-white">9</div>
+                    </div>
+                </div>
+                <div class="col-3 px-0" data-id="nature" data-type="industrial">
+                    <div class="s-inner position-relative pr-3">
+                        <img src="img/img10.jpg">
+                        <div class="s-number position-absolute text-center text-white">10</div>
+                    </div>
+                </div>
+                <div class="col-3 px-0" data-id="daylight">
+                    <div class="s-inner position-relative pr-3">
+                        <img src="img/img11.jpg">
+                        <div class="s-number position-absolute text-center text-white">11</div>
+                    </div>
+                </div>
+                <div class="col-3 px-0" data-id="daylight">
+                    <div class="s-inner position-relative pr-3">
+                        <img src="img/img12.jpg">
+                        <div class="s-number position-absolute text-center text-white">12</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <script src="src/main.js"></script>
+</body>
+
+</html>

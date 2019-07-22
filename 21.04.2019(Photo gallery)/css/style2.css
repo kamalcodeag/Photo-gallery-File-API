@@ -1,0 +1,59 @@
+.s-type
+{
+    /* width: 30vw;
+    height: 10vh;
+    background-color: orange; */
+}
+.s-type li
+{
+   padding: 5px 20px;
+   background-color: orange;
+   border-right: 1px solid rgb(90, 89, 89);
+   color: white;
+}
+.s-type li.active
+{
+    background-color: green;
+    cursor: pointer;
+    /* user-select: none; */
+}
+.s-type li:last-child
+{
+    border: none;
+}
+.s-details li
+{
+    padding: 5px 20px;
+    background-color: rgb(196, 196, 13);
+    /* border-right: 1px solid lightgray; */
+    color: white;
+}
+.s-details li.active
+{
+    background-color: red;
+}
+/* .s-inner
+{
+    /* flex: 0 0 100%;
+    max-width: 100%; */
+
+.s-number
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgba(100,100,100,.6);
+    left: 0;
+    top: 0;
+}
+
+.col-3 .s-inner{
+    height: 180px;
+}
+
+.col-3 .s-inner img
+{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}

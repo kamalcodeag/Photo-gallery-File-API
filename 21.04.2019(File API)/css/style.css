@@ -1,0 +1,31 @@
+.img-holder, .audio-holder, .video-holder {
+  min-height: 10px;
+}
+
+.drop-area {
+  width: 700px;
+  height: 350px;
+  background-color: #d7d7db;
+}
+.drop-area img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.all-files-holder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.audio-holder i {
+  font-size: 4rem;
+  color: #ac6565;
+}
+
+.video-holder i {
+  font-size: 4rem;
+  color: #6252f0;
+}
